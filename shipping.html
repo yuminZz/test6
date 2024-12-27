@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>包裹配送</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/product/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex align-items-center justify-content-center">
+        <!-- 圖片 Logo -->
+        <a class="py-2 d-flex align-items-center me-5" href="index.html" aria-label="Product">
+          <img src="title.jpg" alt="Product Logo" width="50" height="51">
+        </a>
+    
+        <!-- 導航連結 -->
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html"><strong>首頁</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#service-section"><strong>代購服務</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#shipping"><strong>包裹配送</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#feedback"><strong>顧客回饋</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#contact"><strong>聯絡資訊</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#faq"><strong>常見問題(FAQ)</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#about-me"><strong>關於ME</strong></a>
+      </div>
+    </nav>
+    
+    <style>
+      html {scroll-behavior: smooth;}  /* 頁面滑動 */
+
+      .site-header {
+        height: 70px; /* 設定導航欄的高度 */
+      }
+      .container {
+        display: flex; /* 啟用 Flexbox */
+        align-items: center; /* 垂直置中 */
+        justify-content: center; /* 將內容水平方向置中 */
+      }
+      .py-2 {
+        display: flex; /* 確保每個項目使用 Flexbox */
+        align-items: center; /* 讓每個項目內部垂直置中 */
+      }
+      .mx-3 {
+        margin-left: 5rem; /* 文字連結之間的水平間距 */
+        margin-right: 5rem;
+      }
+      .me-5 {
+        margin-right: 2rem; /* 圖片與文字連結間的額外間距 */
+      }
+      .d-none.d-md-inline-block {
+        color: rgb(223, 213, 213); /* 設定文字顏色 */
+        text-decoration: none; /* 移除下劃線 */
+      }
+      .d-none.d-md-inline-block:hover {
+        text-decoration: underline; /* 滑鼠懸停效果 */
+      }
+
+      /* 對於特定 id 的區塊設置 scroll-margin-top */
+      #more-content, 
+      #service-section, 
+      #shipping, 
+      #feedback, 
+      #contact, 
+      #faq, 
+      #about-me {
+        scroll-margin-top: 70px; /* 調整為與導覽列高度一致 */
+      }
+    </style>
+
+    <style>
+      body {
+        background-color: #f7f3e9; /* 米色背景 */
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .header h1 {
+        font-weight: bold; /* 標題加粗 */
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      .header p {
+        font-size: 1.2rem;
+        color: #666;
+      }
+      .section {
+        padding: 20px;
+        margin: 20px auto;
+        background-color: #ffffff; /* 白色容器背景 */
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+      }
+      .section h2 {
+        font-weight: bold; /* 標題加粗 */
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+      .section p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #444;
+      }
+    </style>
+
+    <div class="header" style="padding: 0 40px;">
+        <h1><strong>包裹配送</strong></h1>
+      <p>找尋各種最優惠的集運，運回後可透過各種管道寄送商品給您(預設為賣貨便)。<br>也可提供包裹代收服務，每項包裹代收費$20。<br>以下列的國內外運費皆由您負擔。</p>
+    </div>
+
+    <div class="section">
+      <h2>
+        <img src="box.jpg" alt="box" class="icon"> 配送管道
+      </h2>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>國家</th>
+            <th>配送管道</th>
+            <th>等待時間</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>韓國</td>
+            <td>sender360</td>
+            <td>3天，僅平日發貨</td>
+          </tr>
+          <tr>
+            <td>日本</td>
+            <td>台集運</td>
+            <td>4~5天，僅平日發貨</td>
+          </tr>
+          <tr>
+            <td>中國</td>
+            <td>台集運</td>
+            <td>6~8天，僅平日發貨</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>
+        <img src="lookme.jpg" alt="lookme" class="icon"> 國際運費
+      </h2>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>目的地</th>
+            <th>運費</th>
+            <th>運送方式</th>
+            <th>其他費用</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>韓國</td>
+            <td>$195/kg</td>
+            <td>空運</td>
+            <td>無</td>
+          </tr>
+          <tr>
+            <td>日本</td>
+            <td>$250/kg</td>
+            <td>空運</td>
+            <td>wvs shop需額外負擔境內運費(下單一次$180)</td>
+          </tr>
+          <tr>
+            <td>中國</td>
+            <td>$65/kg</td>
+            <td>海快</td>
+            <td>無</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+
+    <div class="section">
+      <h2>
+        <img src="car.jpg" alt="car" class="icon"> 抵台後配送方式
+      </h2>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th style="text-align: center; vertical-align: middle;">配送方式</th>
+            <th style="text-align: center; vertical-align: middle;">運費</th>
+            <th style="text-align: center; vertical-align: middle;">其他說明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center; vertical-align: middle;">7-Eleven 賣貨便</td>
+            <td style="text-align: center; vertical-align: middle;">$38</td>
+            <td style="text-align: center; vertical-align: middle;">預設選擇</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; vertical-align: middle;">全家 好賣家</td>
+            <td style="text-align: center; vertical-align: middle;">$39</td>
+            <td style="text-align: center; vertical-align: middle;">請提前告知選擇</td>
+          </tr>
+          <tr>
+            <td style="text-align: center; vertical-align: middle;">蝦皮 店到店</td>
+            <td style="text-align: center; vertical-align: middle;">$45</td>
+            <td style="text-align: center; vertical-align: middle;">需額外負擔手續費：下單金額 × 1.075</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>    
+
+    <div class="section">
+      <h2>海關禁運品</h2>
+      
+      <h3>空運特殊產品限制</h3>
+      <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 20px;">
+        <thead>
+          <tr>
+            <th style="background-color: #f0f0f0;">類型</th>
+            <th>限制說明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="background-color: #f0f0f0;">鋰電池產品</td>
+            <td>鋰電池產品需提交電池 MSDS，經過航空公司確認後才可運輸</td>
+          </tr>
+          <tr>
+            <td style="background-color: #f0f0f0;">肉類包裝食品</td>
+            <td>含有肉成分食品，如香腸等不可運輸</td>
+          </tr>
+          <tr>
+            <td style="background-color: #f0f0f0;">含有氣體產品/噴霧等</td>
+            <td>如汽水、防曬噴霧等，航空公司禁止運輸</td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <h3>海快特殊產品限制</h3>
+      <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 20px;">
+        <thead>
+          <tr>
+            <th style="background-color: #f0f0f0;">類型</th>
+            <th>限制說明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="background-color: #f0f0f0;">食品/保健品</td>
+            <td>食品類/保健品禁止發海快</td>
+          </tr>
+          <tr>
+            <td style="background-color: #f0f0f0;">電池/電器類產品</td>
+            <td>含有鋰電池的產品或需要商檢的電器類產品禁止發海快</td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <h3>台灣海關特殊產品限制</h3>
+      <table border="1" style="width: 100%; border-collapse: collapse; text-align: center; margin-bottom: 20px;">
+        <thead>
+          <tr>
+            <th style="background-color: #f0f0f0;">類型</th>
+            <th>限制說明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="background-color: #f0f0f0;">酒類/粉類/茶葉</td>
+            <td>如酒類、粉類、茶葉等</td>
+          </tr>
+          <tr>
+            <td style="background-color: #f0f0f0;">易燃液體</td>
+            <td>如打火機油、油漆、指甲油、香水等</td>
+          </tr>
+          <tr>
+            <td style="background-color: #f0f0f0;">易燃物質</td>
+            <td>如火柴、炭、各式暖爐（石油、煤油等）</td>
+          </tr>
+          <tr>
+            <td style="background-color: #f0f0f0;">氧化性物質</td>
+            <td>如漂白劑、染髮劑等</td>
+          </tr>
+          <tr>
+            <td style="background-color: #f0f0f0;">毒性物質</td>
+            <td>如農藥、放射性物質等</td>
+          </tr>
+          <tr>
+            <td style="background-color: #f0f0f0;">腐蝕性物質</td>
+            <td>如水銀、液體電池等</td>
+          </tr>
+          <tr>
+            <td style="background-color: #f0f0f0;">其他物品</td>
+            <td>如磁鐵、乾冰、植物、生鮮食品、活體動物、偽造貨幣、盜版光碟等</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>出處:sender360</p>
+    </div>
+    
+    <footer class="footer py-4">
+      <div class="container">
+        <!-- LOGO 和版權信息 -->
+        <div class="logo-and-info">
+          <img src="title.jpg" alt="U-Min韓中日代購" class="d-block mx-auto mb-2" width="50" height="50">
+          <p class="copyright">
+            © 2024 U-Min代購 All rights reserved.<br>Design By 張瑜珉.
+          </p>
+        </div>
+    
+        <!-- 介紹部分 -->
+        <div class="footer-nav">
+          <p class="intro-text"><strong>介紹</strong></p>
+          <div class="horizontal-links">
+            <a href="#" class="footer-link">首頁</a>
+            <a href="service.html" class="footer-link">代購服務</a>
+            <a href="contact.html" class="footer-link">聯絡我</a>
+          </div>
+        </div>
+    
+        <!-- 社交連結部分 -->
+        <div class="social-links">
+          <p class="intro-text"><strong>歡迎追蹤~</strong></p>
+          <div class="horizontal-links">
+            <a href="https://www.facebook.com/profile.php?id=100014749996274" class="social-link">
+              <img src="fb.png" alt="Facebook" class="icon"> Facebook
+            </a>
+            <a href="https://www.instagram.com/yumin.1120/" class="social-link">
+              <img src="ig.webp" alt="Instagram" class="icon"> Instagram
+            </a>
+            <a href="https://tw.shp.ee/qMPvNQW" class="social-link">
+              <img src="shopee.jpg" alt="Shopee" class="icon"> 蝦皮賣場
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- 最底部 -->
+      <div class="footer-note">
+        本網站使用 Bootstrap 框架設計，並遵循網頁瀏覽最佳實踐。
+      </div>
+    </footer>
+    
+      </body>
+    </html>
+    

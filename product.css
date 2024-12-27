@@ -1,0 +1,361 @@
+.container {
+  max-width: 100%; /* 確保占滿整個畫面寬度 */
+  width: 100%;
+  display: flex; /* 啟用 Flexbox */
+  align-items: center; /* 垂直置中 */
+  justify-content: space-between; /* 內容分開排列 */
+  padding: 0; /* 移除不必要的內邊距 */
+}
+
+
+footer .container {
+  max-width: none; /* 移除最大寬度限制 */
+  width: 100%;     /* 確保占滿整個寬度 */
+  padding: 0;      /* 避免內邊距影響背景延伸 */
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+
+.site-header {
+  height: 70px; /* 設定導航欄的高度 */
+}
+
+.py-2 {
+  display: flex; /* 確保每個項目使用 Flexbox */
+  align-items: center; /* 讓每個項目內部垂直置中 */
+}
+
+
+.product-device img {
+  width: 300px;  /* 設定圖片的寬度 */
+  height: 450px; /* 設定圖片的高度 */
+  object-fit: cover; /* 確保圖片保持比例並填滿容器 */
+  transform: scale(1.2) rotate(5deg); /* 圖片放大並旋轉 */
+  transform-origin: center; /* 圖片旋轉時從中心點開始 */
+  position: relative;
+  margin-left: -10px; /* 圖片向左移動，讓邊角超出左側 */
+  margin-top: -10px; /* 圖片向上移動，讓邊角超出上側 */
+  border-radius: 20px; /* 圓角效果，您可以調整這個值 */
+}
+
+
+
+
+.d-none.d-md-inline-block {
+  color: rgb(223, 213, 213); /* 設定文字顏色 */
+  text-decoration: none; /* 移除下劃線 */
+}
+
+.d-none.d-md-inline-block:hover {
+  text-decoration: underline; /* 滑鼠懸停效果 */
+}
+
+.section {
+  margin-top: 30px;
+  text-align: left;  /* 讓內容左對齊 */
+}
+
+.section h2 {
+  text-align: left;  /* 讓標題左對齊 */
+}
+
+.input-group {
+  width: 100%;
+  max-width: 500px;  /* 設定最大寬度，保持版面整潔 */
+  margin: 20px auto;
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
+
+.table th, .table td {
+  text-align: center; /* 水平居中 */
+  vertical-align: middle; /* 垂直居中 */
+}
+
+
+  .icon {
+    width: 24px; /* 圖標寬度 */
+    height: 24px; /* 圖標高度 */
+    margin-right: 8px; /* 圖標與文字的間距 */
+    vertical-align: middle; /* 對齊到文字中間 */
+  }
+
+
+
+  .red-text {
+    color: red;  /* 設定文字顏色為紅色 */
+  }
+
+  .icon {
+    max-width: 100%;   /* 設定圖片最大寬度為容器的100% */
+    width: 8%;
+    height: auto;      /* 設定高度自動調整，保持圖片比例 */
+  }
+  
+  body {
+    background-color: #f7f3e9 !important; /* 強制設定米色背景 */
+    font-family: Arial, sans-serif;
+}
+
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden; /* 確保圖片不會超出容器 */
+  z-index: 1; /* 保持圖片在適當層級 */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    z-index: 2; /* 讓箭頭顯示在圖片上方 */
+}
+
+.carousel-item img {
+    max-height: 80vh; /* 限制圖片最大高度，避免過大覆蓋箭頭 */
+    object-fit: cover; /* 保持圖片比例，並填滿容器 */
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden; /* 確保圖片不會超出容器 */
+}
+
+.carousel-item img {
+  width: 100%; /* 讓圖片寬度填滿容器 */
+  max-height: 500px; /* 根據需要調整最大高度 */
+  object-fit: contain; /* 保持圖片比例並讓圖片完整顯示 */
+}
+
+/* 修改左邊箭頭顏色 */
+.carousel-control-prev-icon {
+  background-color: #b39f78;
+  border-radius: 50%; /* 圓形背景 */
+  padding: 10px; /* 增加箭頭大小 */
+  font-size: 1.5rem; /* 增大箭頭圖標 */
+}
+
+/* 修改右邊箭頭顏色 */
+.carousel-control-next-icon {
+  background-color: #b39f78;
+  border-radius: 50%; /* 圓形背景 */
+  padding: 10px; /* 增加箭頭大小 */
+  font-size: 1.5rem; /* 增大箭頭圖標 */
+}
+
+/* 通用樣式 */
+.footer {
+  background-color: #000; /* 頁尾背景色 */
+  color: #f7f3e9;
+  padding: 20px 0; /* 增加上下間距，並縮小左右間距 */
+  font-size: 0.9rem;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center; /* 讓內容區域集中顯示 */
+  align-items: center;
+  text-align: center;
+  gap: 50px; /* 在區塊間增加適當間距 */
+  padding: 0 20px; /* 保證區塊不會靠邊 */
+  flex-direction: row; /* 水平排列 */
+}
+
+
+/* LOGO 和版權信息 */
+.logo-and-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20%; /* 限制區塊最大寬度 */
+  text-align: center;
+}
+
+.logo-and-info img {
+  margin-bottom: 10px; /* 圖片與文字間距 */
+}
+
+.logo-and-info .copyright {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* 介紹部分 */
+.footer-nav {
+  text-align: center; /* 讓文字和連結水平居中 */
+  max-width: 30%; /* 限制最大寬度 */
+}
+
+.footer-nav .horizontal-links {
+  display: flex; /* 使用彈性盒模型讓內容橫向排列 */
+  justify-content: center; /* 居中排列 */
+  gap: 15px; 
+}
+
+.footer-nav .footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-nav .footer-link:hover {
+  color: #f7f3e9;
+  text-decoration: underline;
+}
+
+/* 社交連結部分 */
+.social-links {
+  text-align: center; /* 使文字和連結水平居中 */
+  max-width: 30%; /* 限制最大寬度 */
+}
+
+.social-links .horizontal-links {
+  display: flex; /* 使用彈性盒模型讓內容橫向排列 */
+  justify-content: center; /* 居中排列 */
+  gap: 15px; 
+}
+
+.social-links .social-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.social-links .social-link:hover {
+  color: #f7f3e9;
+  text-decoration: underline;
+}
+
+/* 調整社交連結圖標大小 */
+.icon {
+  width: 25px; /* 設定與 title.jpg 一致的大小 */
+  height: 25px;
+  margin-right: 5px;
+}
+
+/* 最底部文字樣式 */
+.footer-note {
+  color: #d3d3d3;
+  font-size: 0.8rem;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* 針對 index.html 頁尾的樣式 */
+.index-footer {
+  background-color: #000;
+  padding: 3rem 0; /* 設定內邊距 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.index-footer .logo-and-info, .index-footer .footer-nav, .index-footer .social-links {
+  flex: 1 1 300px;
+}
+
+.index-footer .footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.index-footer .footer-nav li {
+  margin: 10px 0;
+}
+
+.index-footer .footer-nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.index-footer .social-links a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.index-footer .social-links img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.index-footer .footer-note {
+  text-align: center;  /* 使文字水平置中 */
+  width: 100%;          /* 確保容器的寬度為100% */
+  margin: 0 auto;       /* 讓容器本身居中 */
+}

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>U-min韓.日.中代購</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/product/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <style>
+
+      
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex align-items-center justify-content-center">
+        <!-- 圖片 Logo -->
+        <a class="py-2 d-flex align-items-center me-5" href="#" aria-label="Product">
+          <img src="title.jpg" alt="Product Logo" width="50" height="51">
+        </a>
+    
+        <!-- 導航連結 -->
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="#"><strong>首頁</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="#service-section"><strong>代購服務</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="#shipping"><strong>包裹配送</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="#feedback"><strong>顧客回饋</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="#contact"><strong>聯絡資訊</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="#faq"><strong>常見問題</strong>(FAQ)</a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="#about-me"><strong>關於ME</strong></a>
+        
+      </div>
+    </nav>
+    
+    <style>
+
+
+      html {scroll-behavior: smooth;}  /* 頁面滑動 */
+
+      .site-header {
+        height: 70px; /* 設定導航欄的高度 */
+      }
+      .container {
+        display: flex; /* 啟用 Flexbox */
+        align-items: center; /* 垂直置中 */
+        justify-content: center; /* 將內容水平方向置中 */
+      }
+      .py-2 {
+        display: flex; /* 確保每個項目使用 Flexbox */
+        align-items: center; /* 讓每個項目內部垂直置中 */
+      }
+      .mx-3 {
+        margin-left: 5rem; /* 文字連結之間的水平間距 */
+        margin-right: 5rem;
+      }
+      .me-5 {
+        margin-right: 2rem; /* 圖片與文字連結間的額外間距 */
+      }
+      .d-none.d-md-inline-block {
+        color: rgb(223, 213, 213); /* 設定文字顏色 */
+        text-decoration: none; /* 移除下劃線 */
+      }
+      .d-none.d-md-inline-block:hover {
+        text-decoration: underline; /* 滑鼠懸停效果 */
+      }
+
+      /* 對於特定 id 的區塊設置 scroll-margin-top */
+#more-content, 
+#service-section, 
+#shipping, 
+#feedback, 
+#contact, 
+#faq, 
+#about-me {
+  scroll-margin-top: 70px; /* 調整為與導覽列高度一致 */
+}
+
+
+.product-device img {
+  width: 100%;  /* 縮放圖片以適應容器寬度 */
+  height: 100%;  /* 讓圖片填充容器高度 */
+  object-fit: contain; /* 保持圖片比例並適應容器 */
+}
+
+    </style>
+  </style>
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <div class="container d-flex align-items-center justify-content-between">
+    <!-- 左邊圖片 -->
+    <div class="product-device">
+      <img src="test1.jpg" alt="裝飾圖片1" />
+    </div>
+
+    <!-- 標題和文字內容 -->
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 font-weight-normal"><strong>U-min韓.日.中代購</strong></h1>
+      <p class="lead font-weight-normal">以親切的價格購買您想要的偶像周邊吧~</p>
+      <a class="btn btn-outline-secondary" href="#">查看更多</a>
+    </div>
+
+    <!-- 右邊圖片 -->
+    <div class="product-device product-device-2">
+      <img src="test6.jpg" alt="裝飾圖片2" />
+    </div>
+  </div>
+</div>
+
+<!-- 目標區塊 -->
+<div id="more-content" class="additional-content"></div>
+
+<script>
+  document.querySelector('.btn').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.querySelector('#more-content').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+</script>
+
+
+<div id="service-section" class="d-flex flex-wrap w-100 my-md-3 pl-md-3">
+  <!-- 代購服務 -->
+  <div class="col-12 col-md-4 p-3">
+    <a href="service.html" class="text-decoration-none">
+      <div class="bg-dark text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5"><strong>代購服務</strong></h2>
+          <p class="lead">服務流程、收款方式、韓元&台幣試算、可代購平台</p>
+        </div>
+        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; position: relative;">
+          <img src="carat.jpg" alt="carat" style="max-width: 100%; max-height: 100%; object-fit: cover; border-radius: 21px 21px 0 0;">
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- 包裹配送容器 -->
+  <div id="shipping" class="col-12 col-md-4 p-3">
+    <a href="shipping.html" class="text-decoration-none text-dark">
+      <div class="bg-light text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5"><strong>包裹配送</strong></h2>
+          <p class="lead">配送管道、國際運費、抵台後配送方式、海關禁運品</p>
+        </div>
+        <!-- 圖片加入到黑色容器內的白色色塊中 -->
+        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; display: flex; align-items: center; justify-content: center;">
+          <img src="car.jpg" alt="Car" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- 顧客回饋 -->
+  <div id="feedback" class="col-12 col-md-4 p-3">
+    <a href="feedback.html" class="text-decoration-none text-white">
+      <div class="bg-dark text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5"><strong>顧客回饋</strong></h2>
+          <p class="lead">來自messenger、line回覆的訊息(私訊頁面截圖)</p>
+        </div>
+        <!-- 圖片加入到黑色容器內的白色色塊中 -->
+        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; display: flex; align-items: center; justify-content: center;">
+          <img src="feedback.jpg" alt="feedback" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+        </div>
+      </div>
+    </a>
+  </div>
+
+<!-- 以下為聯絡資訊、常見問題和關於ME，調整為並列顯示 -->
+<div id="contact" class="col-12 col-md-4 p-3">
+  <a href="contact.html" class="text-decoration-none text-dark">
+    <div class="bg-light text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5"><strong>聯絡資訊</strong></h2>
+        <p class="lead">FB、IG、LINE、GMail</p>
+      </div>
+      <!-- 圖片加入到黑色容器內的白色色塊中 -->
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; display: flex; align-items: center; justify-content: center;">
+        <img src="contact.jpg" alt="contact" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+      </div>
+    </div>
+  </a>
+</div>
+          
+  <!-- 常見問題(FAQ) -->
+<div id="faq" class="col-12 col-md-4 p-3">
+  <a href="faq.html" class="text-decoration-none text-white">
+    <div class="bg-dark text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5"><strong>常見問題(FAQ)</strong></h2>
+        <p class="lead">代購相關問題</p>
+      </div>
+      <!-- 圖片容器 -->
+      <div class="bg-light shadow-sm mx-auto" 
+           style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+        <img src="faq.jpg" alt="faq" 
+             style="max-width: 100%; max-height: 100%; object-fit: cover; display: block;">
+      </div>
+    </div>
+  </a>
+</div>
+            
+  <!-- 關於ME -->
+  <div id="about-me" class="col-12 col-md-4 p-3">
+    <a href="about-me.html" class="text-decoration-none text-dark">
+      <div class="bg-light text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5"><strong>關於ME</strong></h2>
+          <p class="lead">熟客、特定品項優惠、注意事項等</p>
+        </div>
+        <!-- 圖片加入到黑色容器內的白色色塊中 -->
+        <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; display: flex; align-items: center; justify-content: center;">
+          <img src="title.jpg" alt="title" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <footer class="footer py-4 index-footer">
+    <div class="container">
+      <!-- LOGO 和版權信息 -->
+      <div class="logo-and-info">
+        <img src="title.jpg" alt="U-Min韓中日代購" class="d-block mx-auto mb-2" width="50" height="50">
+        <p class="copyright">
+          © 2024 U-Min代購 All rights reserved.<br>Design By 張瑜珉.
+        </p>
+      </div>
+  
+      <!-- 介紹部分 -->
+      <div class="footer-nav">
+        <p class="intro-text"><strong>介紹</strong></p>
+        <div class="horizontal-links">
+          <a href="#" class="footer-link">首頁</a>
+          <a href="service.html" class="footer-link">代購服務</a>
+          <a href="contact.html" class="footer-link">聯絡我</a>
+        </div>
+      </div>
+  
+      <!-- 社交連結部分 -->
+      <div class="social-links">
+        <p class="intro-text"><strong>歡迎追蹤~</strong></p>
+        <div class="horizontal-links">
+          <a href="https://www.facebook.com/profile.php?id=100014749996274" class="social-link">
+            <img src="fb.png" alt="Facebook" class="icon"> Facebook
+          </a>
+          <a href="https://www.instagram.com/yumin.1120/" class="social-link">
+            <img src="ig.webp" alt="Instagram" class="icon"> Instagram
+          </a>
+          <a href="https://tw.shp.ee/qMPvNQW" class="social-link">
+            <img src="shopee.jpg" alt="Shopee" class="icon"> 蝦皮賣場
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- 最底部 -->
+    <div class="footer-note">
+      本網站使用 Bootstrap 框架設計，並遵循網頁瀏覽最佳實踐。
+    </div>
+
+
+  </footer>    
+  
+  </body>
+</html>
+

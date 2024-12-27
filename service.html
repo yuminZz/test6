@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>代購服務</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/product/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="site-header sticky-top py-1">
+      <div class="container d-flex align-items-center justify-content-center">
+        <!-- 圖片 Logo -->
+        <a class="py-2 d-flex align-items-center me-5" href="index.html" aria-label="Product">
+          <img src="title.jpg" alt="Product Logo" width="50" height="51">
+        </a>
+    
+        <!-- 導航連結 -->
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html"><strong>首頁</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#service-section"><strong>代購服務</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#shipping"><strong>包裹配送</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#feedback"><strong>顧客回饋</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#contact"><strong>聯絡資訊</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#faq"><strong>常見問題(FAQ)</strong></a>
+        <a class="py-2 mx-3 d-none d-md-inline-block" href="index.html#about-me"><strong>關於ME</strong></a>
+      </div>
+    </nav>
+    
+    <style>
+      html {scroll-behavior: smooth;}  /* 頁面滑動 */
+
+      .site-header {
+        height: 70px; /* 設定導航欄的高度 */
+      }
+      .container {
+        display: flex; /* 啟用 Flexbox */
+        align-items: center; /* 垂直置中 */
+        justify-content: center; /* 將內容水平方向置中 */
+      }
+      .py-2 {
+        display: flex; /* 確保每個項目使用 Flexbox */
+        align-items: center; /* 讓每個項目內部垂直置中 */
+      }
+      .mx-3 {
+        margin-left: 5rem; /* 文字連結之間的水平間距 */
+        margin-right: 5rem;
+      }
+      .me-5 {
+        margin-right: 2rem; /* 圖片與文字連結間的額外間距 */
+      }
+      .d-none.d-md-inline-block {
+        color: rgb(223, 213, 213); /* 設定文字顏色 */
+        text-decoration: none; /* 移除下劃線 */
+      }
+      .d-none.d-md-inline-block:hover {
+        text-decoration: underline; /* 滑鼠懸停效果 */
+      }
+
+      /* 對於特定 id 的區塊設置 scroll-margin-top */
+      #more-content, 
+      #service-section, 
+      #shipping, 
+      #feedback, 
+      #contact, 
+      #faq, 
+      #about-me {
+        scroll-margin-top: 70px; /* 調整為與導覽列高度一致 */
+      }
+    </style>
+
+    <style>
+      body {
+        background-color: #f7f3e9; /* 米色背景 */
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .header h1 {
+        font-weight: bold; /* 標題加粗 */
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      .header p {
+        font-size: 1.2rem;
+        color: #666;
+      }
+      .section {
+        padding: 20px;
+        margin: 20px auto;
+        background-color: #ffffff; /* 白色容器背景 */
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+      }
+      .section h2 {
+        font-weight: bold; /* 標題加粗 */
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+      .section p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #444;
+      }
+    </style>
+
+    <!-- 代購服務內容 -->
+<div class="header" style="padding: 0 40px;">
+  <h1><strong>代購服務</strong></h1>
+  <p>快速回覆訊息、不拖延、本人同為粉絲，懂包卡、包專輯，了解您需要什麼服務!
+    <br>您的態度=我的態度
+  </p>
+</div>
+
+<div class="section">
+  <h2>
+    <img src="sop.jpg" alt="SOP" class="icon"> 服務流程
+  </h2>
+  <table class="table table-bordered table-striped">
+
+    <thead>
+      <tr>
+        <th>階段</th>
+        <th>流程內容</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>商品抵台前</td>
+        <td>商品搜索、報價確認、購買代收、國際配送</td>
+      </tr>
+      <tr>
+        <td>商品抵台後</td>
+        <td>於賣貨便下單(其下單金額為國際運費+包材費)，在您下單前先幫您代墊國際運費</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="section">
+  <h2>
+    <img src="money.jpg" alt="MONEY" class="icon"> 收款方式
+  </h2>
+  <p>僅提供<strong>中華郵政帳戶</strong>收款:確認金額後匯款，不提供貨付、不代墊商品金額。</p>
+</div>
+
+<div class="section">
+  <h2>
+    <img src="change.jpg" alt="change" class="icon"> 韓元&台幣試算
+  </h2>
+  <p>其金額不包含任何運費，後續需負擔國際運費(包含在賣貨便下單金額)。<br>代購匯率為41，輸入韓元金額，並計算相對應的台幣金額。</p>
+
+  <!-- 價格試算框 -->
+  <div class="input-group mb-3">
+    <span class="input-group-text">韓元 (KRW)</span>
+    <input type="number" id="krwAmount" class="form-control" placeholder="輸入韓元金額">
+    <span class="input-group-text">台幣 (TWD)</span>
+    <input type="text" id="twdAmount" class="form-control" disabled placeholder="自動計算">
+  </div>
+
+  <!-- 計算按鈕 -->
+  <div class="d-flex justify-content-end">
+    <button class="btn btn-primary" onclick="calculateExchange()">計算</button>
+  </div>
+</div>
+</div>
+
+<script>
+  // 定義韓元對台幣的匯率
+  const exchangeRate = 1 / 41; // 1 KRW = 1/41 TWD
+
+  // 計算函數
+  function calculateExchange() {
+    const krwAmount = document.getElementById("krwAmount").value;  // 取得輸入的韓元金額
+    if (krwAmount && !isNaN(krwAmount)) {
+      const twdAmount = krwAmount * exchangeRate;  // 計算台幣金額
+      document.getElementById("twdAmount").value = twdAmount.toFixed(2);  // 顯示結果，保留兩位小數
+    } else {
+      alert("請輸入有效的韓元金額！");
+    }
+  }
+</script>
+
+<style>
+  .input-group {
+    width: 100%;
+    max-width: 500px;  /* 設定最大寬度，保持版面整潔 */
+    margin: 20px auto;
+  }
+
+  .input-group-text {
+    background-color: #f8f9fa;
+  }
+
+  .btn-primary {
+    margin-top: 10px;
+  }
+
+  .section {
+    text-align: left;
+    margin-top: 30px;
+  }
+</style>
+
+<div class="section">
+  <h2>
+    <img src="ok.jpg" alt="ok" class="icon"> 可代購平台
+  </h2>
+  <p>可幫您搶預購品，但需先匯款，若開賣時未匯款則不會幫忙搶，請見諒。</p>
+  <p style="text-align: center;">
+    <a href="https://shop.weverse.io/zh-tw/home" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none;">
+      <img src="wvsshop.webp" alt="Weverse Shop Logo" style="margin-right: 10px; width: 30px; height: auto;">
+      Weverse shop
+    </a>
+  </p>
+  <p style="text-align: center;">
+    <a href="https://global.yes24.com/" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none;">
+      <img src="yes24.webp" alt="yes24 Logo" style="margin-right: 10px; width: 30px; height: auto;">
+      Yes24 Global版
+    </a>
+  </p>
+  <p style="text-align: center;">
+    <a href="https://www.makestar.co/" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none;">
+      <img src="ms.png" alt="Makestar Logo" style="margin-right: 10px; width: 30px; height: auto;">
+      Makestar
+    </a>
+  </p>
+  <p style="text-align: center;">
+    <a href="https://www.goofish.com/" target="_blank" style="display: inline-flex; align-items: center; text-decoration: none;">
+      <img src="xu.png" alt="閒魚 Logo" style="margin-right: 10px; width: 30px; height: auto;">
+      閒魚
+    </a>
+  </p>  
+  <p style="text-align: center;">>>若需購買其他平台可私訊詢問。</p>
+</div>
+
+<footer class="footer py-4">
+  <div class="container">
+    <!-- LOGO 和版權信息 -->
+    <div class="logo-and-info">
+      <img src="title.jpg" alt="U-Min韓中日代購" class="d-block mx-auto mb-2" width="50" height="50">
+      <p class="copyright">
+        © 2024 U-Min代購 All rights reserved.<br>Design By 張瑜珉.
+      </p>
+    </div>
+
+    <!-- 介紹部分 -->
+    <div class="footer-nav">
+      <p class="intro-text"><strong>介紹</strong></p>
+      <div class="horizontal-links">
+        <a href="#" class="footer-link">首頁</a>
+        <a href="service.html" class="footer-link">代購服務</a>
+        <a href="contact.html" class="footer-link">聯絡我</a>
+      </div>
+    </div>
+
+    <!-- 社交連結部分 -->
+    <div class="social-links">
+      <p class="intro-text"><strong>歡迎追蹤~</strong></p>
+      <div class="horizontal-links">
+        <a href="https://www.facebook.com/profile.php?id=100014749996274" class="social-link">
+          <img src="fb.png" alt="Facebook" class="icon"> Facebook
+        </a>
+        <a href="https://www.instagram.com/yumin.1120/" class="social-link">
+          <img src="ig.webp" alt="Instagram" class="icon"> Instagram
+        </a>
+        <a href="https://tw.shp.ee/qMPvNQW" class="social-link">
+          <img src="shopee.jpg" alt="Shopee" class="icon"> 蝦皮賣場
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 最底部 -->
+  <div class="footer-note">
+    本網站使用 Bootstrap 框架設計，並遵循網頁瀏覽最佳實踐。
+  </div>
+</footer>
+
+  </body>
+</html>
